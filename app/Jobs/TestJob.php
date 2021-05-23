@@ -36,6 +36,6 @@ class TestJob implements ShouldQueue
      */
     public function handle()
     {
-
+        $this->user->update(['job' => now()]);
     }
 }
